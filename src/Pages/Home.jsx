@@ -33,18 +33,18 @@ const StatusBadge = memo(() => (
 
 const MainTitle = memo(() => (
   <div className="space-y-2" data-aos="fade-up" data-aos-delay="600">
-    <h1 className="text-5xl sm:text-6xl md:text-6xl lg:text-6xl xl:text-7xl font-bold tracking-tight">
+    <h1 className="text-3xl sm:text-5xl md:text-5xl lg:text-5xl xl:text-6xl font-bold tracking-tight">
       <span className="relative inline-block">
         <span className="absolute -inset-2 bg-gradient-to-r from-[#2563eb] to-[#06b6d4] blur-2xl opacity-20"></span>
         <span className="relative bg-gradient-to-r from-white via-slate-100 to-cyan-200 bg-clip-text text-transparent">
-          Frontend
+          Embedded Systems
         </span>
       </span>
       <br />
       <span className="relative inline-block mt-2">
         <span className="absolute -inset-2 bg-gradient-to-r from-[#2563eb] to-[#06b6d4] blur-2xl opacity-20"></span>
         <span className="relative bg-gradient-to-r from-[#2563eb] to-[#06b6d4] bg-clip-text text-transparent">
-          Developer
+          & Web Development
         </span>
       </span>
     </h1>
@@ -157,11 +157,11 @@ const Home = () => {
     <>
       <Helmet>
         <title>Muchamad Fikri Ali — Embedded Systems & Web Development</title>
-        <meta name="description" content="Website resmi Muchamad Fikri Ali, Front-End Web Developer. Saya berfokus pada penciptaan pengalaman digital yang menarik dan selalu berupaya memberikan solusi terbaik dalam setiap proyek yang saya kerjakan." />
+        <meta name="description" content="Website resmi Muchamad Fikri Ali, Embedded Systems & Web Development. Saya berfokus pada penciptaan pengalaman digital yang menarik dan selalu berupaya memberikan solusi terbaik dalam setiap proyek yang saya kerjakan." />
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://fikriali.my.id" />
         <meta property="og:title" content="Muchamad Fikri Ali — Embedded Systems & Web Development" />
-        <meta property="og:description" content="Website resmi dan portofolio Muchamad Fikri Ali, Front-End Web Developer." />
+        <meta property="og:description" content="Website resmi dan portofolio Muchamad Fikri Ali, Embedded Systems & Web Development." />
         <meta property="og:url" content="https://fikriali.my.id" />
         <meta property="og:type" content="website" />
         <script type="application/ld+json">{`
@@ -205,7 +205,7 @@ const Home = () => {
                   <p className="text-base md:text-lg text-gray-400 max-w-xl leading-relaxed font-light"
                     data-aos="fade-up"
                     data-aos-delay="1000">
-                    Bersemangat dalam pengembangan embedded systems dan web developer, berspesialisasi.
+                    Bersemangat dalam bidang Embedded Systems & Web Development, berspesialisasi.
                   </p>
 
                   {/* Tech Stack */}

@@ -244,7 +244,7 @@ export const DEFAULT_PROJECTS = [
     id: 7,
     Title: "PWS KIA Puskesmas Plumbon - Medical Records System",
     Year: "2025",
-    Description: "Proyek kolaborasi bersama Tim IT RSUD Arjawinangun dalam membangun sistem informasi web rekam medis digital untuk Puskesmas Plumbon. Berperan sebagai Front-End Developer dalam menyusun tabel data pemantauan dan formulir inputan rekam medis terstandarisasi.",
+    Description: "Proyek kolaborasi bersama Tim IT RSUD Arjawinangun dalam membangun sistem informasi web rekam medis digital untuk Puskesmas Plumbon. Berperan di bidang Embedded Systems & Web Development dalam menyusun tabel data pemantauan dan formulir inputan rekam medis terstandarisasi.",
     Img: "/projects/pws-kia-plumbon.png",
     Link: null,
     Github: null,
