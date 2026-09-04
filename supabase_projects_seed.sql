@@ -101,7 +101,7 @@ VALUES
 ),
 (
   'PWS KIA Puskesmas Plumbon - Medical Records System',
-  'Proyek kolaborasi bersama Tim IT RSUD Arjawinangun dalam membangun sistem informasi web rekam medis digital untuk Puskesmas Plumbon. Berperan di bidang Embedded Systems & Web Development dalam menyusun tabel data pemantauan dan formulir inputan rekam medis terstandarisasi.',
+  'Proyek kolaborasi bersama Tim IT RSUD Arjawinangun dalam membangun sistem informasi web rekam medis digital untuk Puskesmas Plumbon. Berperan sebagai Front-End Developer dalam menyusun tabel data pemantauan dan formulir inputan rekam medis terstandarisasi.',
   '/projects/pws-kia-plumbon.png',
   NULL,
   NULL,
