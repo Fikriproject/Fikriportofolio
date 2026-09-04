@@ -140,6 +140,23 @@ const techStacks = [
 export const DEFAULT_PROJECTS = [
   {
     id: 1,
+    Title: "HadangMU - Live Scoring & Tournament Management System",
+    Year: "2026",
+    Description: "Aplikasi penilaian dan skor digital terpadu untuk pertandingan olahraga tradisional Hadang (Gobak Sodor). Memudahkan juri dan peserta melihat skor secara live melalui integrasi meja juri mobile, ruang kontrol admin, dan papan skor TV fullscreen secara real-time.",
+    Img: "/projects/hadang-mu.png",
+    Link: "https://hadangmu.vercel.app/",
+    Github: "https://github.com/Fikriproject/Hadang-MU",
+    Features: [
+      "Papan Skor TV Fullscreen & Live Scoreboard Real-time",
+      "Antarmuka Meja Juri Mobile Responsif & Cepat",
+      "Panel Ruang Kontrol Admin & Manajemen Pertandingan",
+      "Pembaruan Skor Otomatis Tanpa Reload Halaman",
+      "Sinkronisasi Data Real-time Multi-Perangkat (TV, HP, Laptop)"
+    ],
+    TechStack: ["Next.js", "React", "TailwindCSS", "Vercel", "JavaScript", "Realtime WebSockets"]
+  },
+  {
+    id: 2,
     Title: "Laksana POS - Modern Point of Sales System",
     Year: "2025",
     Description: "Sistem Point of Sales (POS) modern berbasis React & Vite dengan backend PHP & MySQL. Menampilkan transaksi real-time, manajemen produk & stok, laporan penjualan, dan UI/UX responsif.",
@@ -156,7 +173,7 @@ export const DEFAULT_PROJECTS = [
     TechStack: ["React", "Vite", "PHP", "MySQL", "TailwindCSS", "REST API"]
   },
   {
-    id: 2,
+    id: 3,
     Title: "Hydromate - Automatic Plant Watering System",
     Year: "2024",
     Description: "Sistem penyiram tanaman otomatis berbasis IoT yang menggabungkan web dashboard monitoring dengan firmware mikrokontroler telemetri sensor kelembaban tanah dan kendali pompa air secara real-time.",
@@ -173,7 +190,7 @@ export const DEFAULT_PROJECTS = [
     TechStack: ["PHP", "JavaScript", "C++", "Arduino", "ESP8266/ESP32", "MySQL", "IoT Sensors"]
   },
   {
-    id: 3,
+    id: 4,
     Title: "Crash Detector - IoT Accident Detection & Emergency Alert",
     Year: "2026",
     Description: "Sistem pendeteksi insiden tabrakan & kecelakaan kendaraan berbasis IoT MPU-6050 & GPS NEO-6M terhubung dengan Web Dashboard real-time, emergency trigger, log rute perjalanan, dan safe-mode recovery.",
@@ -190,7 +207,7 @@ export const DEFAULT_PROJECTS = [
     TechStack: ["C++", "Arduino", "ESP32", "PHP", "MySQL", "GPS NEO-6M", "MPU-6050", "Postman"]
   },
   {
-    id: 4,
+    id: 5,
     Title: "Tape Ketan Bakung Cirebon - UMKM Landing Page",
     Year: "2026",
     Description: "Landing page promosi dan branding digital untuk produk Tape Ketan Bakung khas Cirebon. Dilengkapi showcase varian produk, visual nusantara, integrasi WhatsApp order, dan optimasi performa web.",
@@ -207,7 +224,7 @@ export const DEFAULT_PROJECTS = [
     TechStack: ["HTML5", "CSS3", "JavaScript", "TailwindCSS", "Netlify", "SEO"]
   },
   {
-    id: 5,
+    id: 6,
     Title: "Ionic MQTT - Realtime Sensor Telemetry & Monitoring App",
     Year: "2025",
     Description: "Aplikasi mobile cross-platform berbasis Ionic Framework & Angular yang terhubung langsung ke broker MQTT untuk pemantauan telemetri suhu dan sensor IoT secara real-time dengan latensi rendah.",
@@ -224,7 +241,7 @@ export const DEFAULT_PROJECTS = [
     TechStack: ["Ionic", "Angular", "TypeScript", "MQTT", "Capacitor", "SCSS"]
   },
   {
-    id: 6,
+    id: 7,
     Title: "Warkop Teras Tengah - Coffee Shop Commercial Landing Page",
     Year: "2026",
     Description: "Landing page promosi dan branding digital untuk kedai kopi modern Warkop Teras Tengah. Dilengkapi showcase menu kopi andalan, interactive coffee selector, integrasi reservasi/order, dan desain dark vintage yang hangat.",
@@ -241,7 +258,7 @@ export const DEFAULT_PROJECTS = [
     TechStack: ["HTML5", "CSS3", "JavaScript", "Responsive Design", "Flexbox/Grid"]
   },
   {
-    id: 7,
+    id: 8,
     Title: "PWS KIA Puskesmas Plumbon - Medical Records System",
     Year: "2025",
     Description: "Proyek kolaborasi bersama Tim IT RSUD Arjawinangun dalam membangun sistem informasi web rekam medis digital untuk Puskesmas Plumbon. Berperan sebagai Front-End Developer dalam menyusun tabel data pemantauan dan formulir inputan rekam medis terstandarisasi.",
@@ -258,7 +275,7 @@ export const DEFAULT_PROJECTS = [
     TechStack: ["PHP", "Bootstrap", "JavaScript", "HTML5", "CSS3", "MySQL"]
   },
   {
-    id: 8,
+    id: 9,
     Title: "Smart Hydro - Real-time IoT Hydroponic Monitoring",
     Year: "2026",
     Description: "Proyek kolaborasi sistem monitoring hidroponik pintar berbasis IoT secara real-time. Berperan dalam membangun integrasi komunikasi telemetri data antara hardware sensor dan website dashboard serta merumuskan kalibrasi & normalisasi pembacaan sensor.",

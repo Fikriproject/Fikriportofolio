@@ -28,6 +28,18 @@ INSERT INTO public.projects (
 )
 VALUES
 (
+  'HadangMU - Live Scoring & Tournament Management System',
+  'Aplikasi penilaian dan skor digital terpadu untuk pertandingan olahraga tradisional Hadang (Gobak Sodor). Memudahkan juri dan peserta melihat skor secara live melalui integrasi meja juri mobile, ruang kontrol admin, dan papan skor TV fullscreen secara real-time.',
+  '/projects/hadang-mu.png',
+  'https://hadangmu.vercel.app/',
+  'https://github.com/Fikriproject/Hadang-MU',
+  '["Papan Skor TV Fullscreen & Live Scoreboard Real-time", "Antarmuka Meja Juri Mobile Responsif & Cepat", "Panel Ruang Kontrol Admin & Manajemen Pertandingan", "Pembaruan Skor Otomatis Tanpa Reload Halaman", "Sinkronisasi Data Real-time Multi-Perangkat (TV, HP, Laptop)"]'::jsonb,
+  '["Next.js", "React", "TailwindCSS", "Vercel", "JavaScript", "Realtime WebSockets"]'::jsonb,
+  '2026',
+  true,
+  1
+),
+(
   'Laksana POS - Modern Point of Sales System',
   'Sistem Point of Sales (POS) modern berbasis React & Vite dengan backend PHP & MySQL. Menampilkan transaksi real-time, manajemen produk & stok, laporan penjualan, dan UI/UX responsif.',
   '/projects/pos-kasir.jpeg',
@@ -37,7 +49,7 @@ VALUES
   '["React", "Vite", "PHP", "MySQL", "TailwindCSS", "REST API"]'::jsonb,
   '2025',
   true,
-  1
+  2
 ),
 (
   'Hydromate - Automatic Plant Watering System',
@@ -49,7 +61,7 @@ VALUES
   '["PHP", "JavaScript", "C++", "Arduino", "ESP8266/ESP32", "MySQL", "IoT Sensors"]'::jsonb,
   '2024',
   true,
-  2
+  3
 ),
 (
   'Crash Detector - IoT Accident Detection & Emergency Alert',
@@ -61,7 +73,7 @@ VALUES
   '["C++", "Arduino", "ESP32", "PHP", "MySQL", "GPS NEO-6M", "MPU-6050", "Postman"]'::jsonb,
   '2026',
   true,
-  3
+  4
 ),
 (
   'Tape Ketan Bakung Cirebon - UMKM Landing Page',
@@ -73,7 +85,7 @@ VALUES
   '["HTML5", "CSS3", "JavaScript", "TailwindCSS", "Netlify", "SEO"]'::jsonb,
   '2026',
   true,
-  4
+  5
 ),
 (
   'Ionic MQTT - Realtime Sensor Telemetry & Monitoring App',
@@ -85,7 +97,7 @@ VALUES
   '["Ionic", "Angular", "TypeScript", "MQTT", "Capacitor", "SCSS"]'::jsonb,
   '2025',
   true,
-  5
+  6
 ),
 (
   'Warkop Teras Tengah - Coffee Shop Commercial Landing Page',
@@ -97,7 +109,7 @@ VALUES
   '["HTML5", "CSS3", "JavaScript", "Responsive Design", "Flexbox/Grid"]'::jsonb,
   '2026',
   true,
-  6
+  7
 ),
 (
   'PWS KIA Puskesmas Plumbon - Medical Records System',
@@ -109,7 +121,7 @@ VALUES
   '["PHP", "Bootstrap", "JavaScript", "HTML5", "CSS3", "MySQL"]'::jsonb,
   '2025',
   true,
-  7
+  8
 ),
 (
   'Smart Hydro - Real-time IoT Hydroponic Monitoring',
@@ -121,7 +133,7 @@ VALUES
   '["IoT Sensors", "WebSockets / MQTT", "Next.js", "PWA", "TailwindCSS", "C++ / ESP32"]'::jsonb,
   '2026',
   true,
-  8
+  9
 );
 
 -- Tampilkan konfirmasi hasil

@@ -24,6 +24,24 @@ const supabase = createClient(supabaseUrl, serviceKey);
 
 const projects = [
   {
+    Title: "HadangMU - Live Scoring & Tournament Management System",
+    Year: "2026",
+    Description: "Aplikasi penilaian dan skor digital terpadu untuk pertandingan olahraga tradisional Hadang (Gobak Sodor). Memudahkan juri dan peserta melihat skor secara live melalui integrasi meja juri mobile, ruang kontrol admin, dan papan skor TV fullscreen secara real-time.",
+    Img: "/projects/hadang-mu.png",
+    Link: "https://hadangmu.vercel.app/",
+    Github: "https://github.com/Fikriproject/Hadang-MU",
+    Features: [
+      "Papan Skor TV Fullscreen & Live Scoreboard Real-time",
+      "Antarmuka Meja Juri Mobile Responsif & Cepat",
+      "Panel Ruang Kontrol Admin & Manajemen Pertandingan",
+      "Pembaruan Skor Otomatis Tanpa Reload Halaman",
+      "Sinkronisasi Data Real-time Multi-Perangkat (TV, HP, Laptop)"
+    ],
+    TechStack: ["Next.js", "React", "TailwindCSS", "Vercel", "JavaScript", "Realtime WebSockets"],
+    is_published: true,
+    order_index: 1
+  },
+  {
     Title: "Laksana POS - Modern Point of Sales System",
     Year: "2025",
     Description: "Sistem Point of Sales (POS) modern berbasis React & Vite dengan backend PHP & MySQL. Menampilkan transaksi real-time, manajemen produk & stok, laporan penjualan, dan UI/UX responsif.",
@@ -39,7 +57,7 @@ const projects = [
     ],
     TechStack: ["React", "Vite", "PHP", "MySQL", "TailwindCSS", "REST API"],
     is_published: true,
-    order_index: 1
+    order_index: 2
   },
   {
     Title: "Hydromate - Automatic Plant Watering System",
@@ -57,7 +75,7 @@ const projects = [
     ],
     TechStack: ["PHP", "JavaScript", "C++", "Arduino", "ESP8266/ESP32", "MySQL", "IoT Sensors"],
     is_published: true,
-    order_index: 2
+    order_index: 3
   },
   {
     Title: "Crash Detector - IoT Accident Detection & Emergency Alert",
@@ -75,7 +93,7 @@ const projects = [
     ],
     TechStack: ["C++", "Arduino", "ESP32", "PHP", "MySQL", "GPS NEO-6M", "MPU-6050", "Postman"],
     is_published: true,
-    order_index: 3
+    order_index: 4
   },
   {
     Title: "Tape Ketan Bakung Cirebon - UMKM Landing Page",
@@ -93,7 +111,7 @@ const projects = [
     ],
     TechStack: ["HTML5", "CSS3", "JavaScript", "TailwindCSS", "Netlify", "SEO"],
     is_published: true,
-    order_index: 4
+    order_index: 5
   },
   {
     Title: "Ionic MQTT - Realtime Sensor Telemetry & Monitoring App",
@@ -111,7 +129,7 @@ const projects = [
     ],
     TechStack: ["Ionic", "Angular", "TypeScript", "MQTT", "Capacitor", "SCSS"],
     is_published: true,
-    order_index: 5
+    order_index: 6
   },
   {
     Title: "Warkop Teras Tengah - Coffee Shop Commercial Landing Page",
@@ -129,7 +147,7 @@ const projects = [
     ],
     TechStack: ["HTML5", "CSS3", "JavaScript", "Responsive Design", "Flexbox/Grid"],
     is_published: true,
-    order_index: 6
+    order_index: 7
   },
   {
     Title: "PWS KIA Puskesmas Plumbon - Medical Records System",
@@ -147,7 +165,7 @@ const projects = [
     ],
     TechStack: ["PHP", "Bootstrap", "JavaScript", "HTML5", "CSS3", "MySQL"],
     is_published: true,
-    order_index: 7
+    order_index: 8
   },
   {
     Title: "Smart Hydro - Real-time IoT Hydroponic Monitoring",
@@ -165,12 +183,12 @@ const projects = [
     ],
     TechStack: ["IoT Sensors", "WebSockets / MQTT", "Next.js", "PWA", "TailwindCSS", "C++ / ESP32"],
     is_published: true,
-    order_index: 8
+    order_index: 9
   }
 ];
 
 async function run() {
-  console.log('Menyuntikkan 8 project ke Supabase...');
+  console.log('Menyuntikkan 9 project ke Supabase...');
   for (const p of projects) {
     const { data, error } = await supabase.from('projects').insert(p).select();
     if (error) {
