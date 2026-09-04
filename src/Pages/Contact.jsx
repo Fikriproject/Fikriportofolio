@@ -44,8 +44,8 @@ const ContactPage = () => {
     });
 
     try {
-      // Ganti dengan email Anda di FormSubmit
-      const formSubmitUrl = 'https://formsubmit.co/fikrizulfarrachman@gmail.com';
+      // FormSubmit target email
+      const formSubmitUrl = 'https://formsubmit.co/fikrialli55@gmail.com';
       
       // Siapkan data form untuk FormSubmit
       const submitData = new FormData();

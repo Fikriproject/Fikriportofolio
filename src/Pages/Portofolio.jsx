@@ -102,20 +102,178 @@ function a11yProps(index) {
   };
 }
 
-// techStacks tetap sama
+// techStacks disesuaikan dengan gambar
 const techStacks = [
-  { icon: "html.svg", language: "HTML" },
-  { icon: "css.svg", language: "CSS" },
-  { icon: "javascript.svg", language: "JavaScript" },
-  { icon: "tailwind.svg", language: "Tailwind CSS" },
-  { icon: "reactjs.svg", language: "ReactJS" },
-  { icon: "vite.svg", language: "Vite" },
-  { icon: "nodejs.svg", language: "Node JS" },
-  { icon: "bootstrap.svg", language: "Bootstrap" },
-  { icon: "firebase.svg", language: "Firebase" },
-  { icon: "MUI.svg", language: "Material UI" },
-  { icon: "vercel.svg", language: "Vercel" },
-  { icon: "SweetAlert.svg", language: "SweetAlert2" },
+  // Row 1
+  { icon: "cplusplus.svg", language: "C++", level: "Advanced" },
+  { icon: "arduino.svg", language: "Arduino", level: "Advanced" },
+  { icon: "espressif.svg", language: "ESP8266", level: "Advanced" },
+  { icon: "espressif.svg", language: "ESP32", level: "Advanced" },
+  { icon: "espressif.svg", language: "ESP32-CAM", level: "Intermediate" },
+  { icon: "html.svg", language: "HTML", level: "Advanced" },
+
+  // Row 2
+  { icon: "css.svg", language: "CSS", level: "Advanced" },
+  { icon: "bootstrap.svg", language: "Bootstrap", level: "Advanced" },
+  { icon: "javascript.svg", language: "JavaScript", level: "Advanced" },
+  { icon: "nodejs.svg", language: "Node.js", level: "Advanced" },
+  { icon: "php.svg", language: "PHP", level: "Intermediate" },
+  { icon: "laravel.svg", language: "Laravel", level: "Intermediate" },
+
+  // Row 3
+  { icon: "codeigniter.svg", language: "CodeIgniter", level: "Beginner" },
+  { icon: "vite.svg", language: "Vite", level: "Advanced" },
+  { icon: "python.svg", language: "Python", level: "Advanced" },
+  { icon: "tensorflow.svg", language: "TensorFlow", level: "Intermediate" },
+  { icon: "yolo.svg", language: "YOLO", level: "Intermediate" },
+  { icon: "mysql.svg", language: "MySQL", level: "Advanced" },
+
+  // Row 4
+  { icon: "firebase.svg", language: "Firebase", level: "Intermediate" },
+  { icon: "github.svg", language: "GitHub", level: "Advanced" },
+  { icon: "vercel.svg", language: "Vercel", level: "Advanced" },
+  { icon: "laragon.svg", language: "Laragon", level: "Advanced" },
+  { icon: "postman.svg", language: "Postman", level: "Advanced" },
+  { icon: "mqtt.svg", language: "MQTT", level: "Advanced" },
+];
+
+export const DEFAULT_PROJECTS = [
+  {
+    id: 1,
+    Title: "Laksana POS - Modern Point of Sales System",
+    Year: "2025",
+    Description: "Sistem Point of Sales (POS) modern berbasis React & Vite dengan backend PHP & MySQL. Menampilkan transaksi real-time, manajemen produk & stok, laporan penjualan, dan UI/UX responsif.",
+    Img: "/projects/pos-kasir.jpeg",
+    Link: null,
+    Github: "https://github.com/Fikriproject/Laksana-POS-APPS",
+    Features: [
+      "Transaksi Kasir Cepat & Real-time",
+      "Manajemen Produk & Stok Inventaris",
+      "Cetak Struk & Riwayat Transaksi",
+      "Multi-perangkat (Desktop & Tablet)",
+      "Laporan Penjualan & Dashboard Analitik"
+    ],
+    TechStack: ["React", "Vite", "PHP", "MySQL", "TailwindCSS", "REST API"]
+  },
+  {
+    id: 2,
+    Title: "Hydromate - Automatic Plant Watering System",
+    Year: "2024",
+    Description: "Sistem penyiram tanaman otomatis berbasis IoT yang menggabungkan web dashboard monitoring dengan firmware mikrokontroler telemetri sensor kelembaban tanah dan kendali pompa air secara real-time.",
+    Img: "/projects/hydromate.png",
+    Link: null,
+    Github: "https://github.com/Fikriproject/Angvatar-Aplikasi-web",
+    Features: [
+      "Monitoring Kelembaban Tanah & Suhu Real-Time",
+      "Penyiraman Otomatis Berdasarkan Threshold Sensor",
+      "Dashboard Web Monitoring Interaktif",
+      "Firmware Kendali Aktuator & Pompa Air",
+      "Pencatatan Log Penyiraman & REST API Endpoint"
+    ],
+    TechStack: ["PHP", "JavaScript", "C++", "Arduino", "ESP8266/ESP32", "MySQL", "IoT Sensors"]
+  },
+  {
+    id: 3,
+    Title: "Crash Detector - IoT Accident Detection & Emergency Alert",
+    Year: "2026",
+    Description: "Sistem pendeteksi insiden tabrakan & kecelakaan kendaraan berbasis IoT MPU-6050 & GPS NEO-6M terhubung dengan Web Dashboard real-time, emergency trigger, log rute perjalanan, dan safe-mode recovery.",
+    Img: "/projects/crash-detektor.jpeg",
+    Link: null,
+    Github: "https://github.com/Fikriproject/crashdetector",
+    Features: [
+      "Deteksi Benturan Otomatis (G-force & Gyro MPU-6050)",
+      "Geolokasi Presisi & Rute via GPS NEO-6M",
+      "Emergency Alert System di Web Dashboard",
+      "Watchdog Timer (WDT) & Safe-Mode Recovery",
+      "Data Logger MicroSD & Postman Test Collection"
+    ],
+    TechStack: ["C++", "Arduino", "ESP32", "PHP", "MySQL", "GPS NEO-6M", "MPU-6050", "Postman"]
+  },
+  {
+    id: 4,
+    Title: "Tape Ketan Bakung Cirebon - UMKM Landing Page",
+    Year: "2026",
+    Description: "Landing page promosi dan branding digital untuk produk Tape Ketan Bakung khas Cirebon. Dilengkapi showcase varian produk, visual nusantara, integrasi WhatsApp order, dan optimasi performa web.",
+    Img: "/projects/tape-ketan-bakung.jpeg",
+    Link: "https://tapeketanbakungcirebon.netlify.app/",
+    Github: "https://github.com/Fikriproject/TKBLandingPage",
+    Features: [
+      "Katalog & Varian Produk Tape Ketan Bakung",
+      "Pemesanan Langsung via WhatsApp",
+      "Desain Responsif Mobile-Friendly",
+      "Informasi Legalitas Usaha (NIB & Halal)",
+      "Optimasi SEO & Hosting di Netlify"
+    ],
+    TechStack: ["HTML5", "CSS3", "JavaScript", "TailwindCSS", "Netlify", "SEO"]
+  },
+  {
+    id: 5,
+    Title: "Ionic MQTT - Realtime Sensor Telemetry & Monitoring App",
+    Year: "2025",
+    Description: "Aplikasi mobile cross-platform berbasis Ionic Framework & Angular yang terhubung langsung ke broker MQTT untuk pemantauan telemetri suhu dan sensor IoT secara real-time dengan latensi rendah.",
+    Img: "/projects/ionic-mqtt-thermora.jpeg",
+    Link: null,
+    Github: "https://github.com/Fikriproject/Ionic-mqtt-monitoring-test",
+    Features: [
+      "Koneksi Real-time ke Broker MQTT (Pub/Sub)",
+      "Visualisasi Telemetri Suhu & Sensor Realtime",
+      "Notifikasi & Alert Ambang Batas",
+      "Arsitektur Modular Angular & TypeScript",
+      "Dukungan Cross-Platform Android & iOS via Capacitor"
+    ],
+    TechStack: ["Ionic", "Angular", "TypeScript", "MQTT", "Capacitor", "SCSS"]
+  },
+  {
+    id: 6,
+    Title: "Warkop Teras Tengah - Coffee Shop Commercial Landing Page",
+    Year: "2026",
+    Description: "Landing page promosi dan branding digital untuk kedai kopi modern Warkop Teras Tengah. Dilengkapi showcase menu kopi andalan, interactive coffee selector, integrasi reservasi/order, dan desain dark vintage yang hangat.",
+    Img: "/projects/caffe-teras-tengah.jpeg",
+    Link: null,
+    Github: "https://github.com/Fikriproject/Landing-Page-warkop-teras-tengah",
+    Features: [
+      "Katalog Menu Kopi & Minuman Signature",
+      "Interactive Coffee & Beverage Showcase",
+      "Informasi Jam Operasional & Lokasi Kedai",
+      "Desain Dark Aesthetic & Warm Vintage",
+      "Integrasi Fast Contact & Social Links"
+    ],
+    TechStack: ["HTML5", "CSS3", "JavaScript", "Responsive Design", "Flexbox/Grid"]
+  },
+  {
+    id: 7,
+    Title: "PWS KIA Puskesmas Plumbon - Medical Records System",
+    Year: "2025",
+    Description: "Proyek kolaborasi bersama Tim IT RSUD Arjawinangun dalam membangun sistem informasi web rekam medis digital untuk Puskesmas Plumbon. Berperan sebagai Front-End Developer dalam menyusun tabel data pemantauan dan formulir inputan rekam medis terstandarisasi.",
+    Img: "/projects/pws-kia-plumbon.png",
+    Link: null,
+    Github: null,
+    Features: [
+      "Formulir Input & Entri Rekam Medis Pasien Terstandar",
+      "Penyusunan Tabel Data Pemantauan KIA (Kesehatan Ibu & Anak)",
+      "Antarmuka Responsif & Ergonomis untuk Tenaga Medis",
+      "Validasi Data Inputan Rekam Medis & Riwayat Pasien",
+      "Kolaborasi Sistem Bersama Tim IT RSUD Arjawinangun"
+    ],
+    TechStack: ["PHP", "Bootstrap", "JavaScript", "HTML5", "CSS3", "MySQL"]
+  },
+  {
+    id: 8,
+    Title: "Smart Hydro - Real-time IoT Hydroponic Monitoring",
+    Year: "2026",
+    Description: "Proyek kolaborasi sistem monitoring hidroponik pintar berbasis IoT secara real-time. Berperan dalam membangun integrasi komunikasi telemetri data antara hardware sensor dan website dashboard serta merumuskan kalibrasi & normalisasi pembacaan sensor.",
+    Img: "/projects/smart-hydro-iot.png",
+    Link: "https://hidroponnik-pwa.vercel.app/",
+    Github: "https://github.com/Antares023/hidroponnik-pwa",
+    Features: [
+      "Integrasi Komunikasi Real-time Perangkat IoT ke Web Dashboard",
+      "Kalibrasi & Normalisasi Data Telemetri Sensor (pH, TDS, Suhu Air)",
+      "Otomatisasi Sirkulasi Nutrisi & Kendali Pompa Pintar",
+      "Penjadwalan Nutrisi Terpadu & Notifikasi Sistem",
+      "Progressive Web App (PWA) Responsif & Cepat"
+    ],
+    TechStack: ["IoT Sensors", "WebSockets / MQTT", "Next.js", "PWA", "TailwindCSS", "C++ / ESP32"]
+  }
 ];
 
 export default function FullWidthTabs() {
@@ -143,12 +301,9 @@ export default function FullWidthTabs() {
         supabase.from("certificates").select("*").order('id', { ascending: false }), 
       ]);
 
-      // Error handling untuk setiap request
-      if (projectsResponse.error) throw projectsResponse.error;
-      if (certificatesResponse.error) throw certificatesResponse.error;
-
       // Supabase mengembalikan data dalam properti 'data'
-      const projectData = projectsResponse.data || [];
+      const rawProjectData = projectsResponse.data || [];
+      const projectData = rawProjectData.length > 0 ? rawProjectData : DEFAULT_PROJECTS;
       const certificateData = certificatesResponse.data || [];
 
       setProjects(projectData);
@@ -162,6 +317,8 @@ export default function FullWidthTabs() {
       window.dispatchEvent(new Event("portfolioDataUpdated"));
     } catch (error) {
       console.error("Error fetching data from Supabase:", error.message);
+      setProjects(DEFAULT_PROJECTS);
+      localStorage.setItem("projects", JSON.stringify(DEFAULT_PROJECTS));
     }
   }, []);
 
@@ -324,6 +481,7 @@ export default function FullWidthTabs() {
                       Description={project.Description}
                       Link={project.Link}
                       id={project.id}
+                      Year={project.Year}
                     />
                   </div>
                 ))}
@@ -348,7 +506,7 @@ export default function FullWidthTabs() {
                     data-aos={index % 3 === 0 ? "fade-up-right" : index % 3 === 1 ? "fade-up" : "fade-up-left"}
                     data-aos-duration={index % 3 === 0 ? "1000" : index % 3 === 1 ? "1200" : "1000"}
                   >
-                    <Certificate ImgSertif={certificate.Img} />
+                    <Certificate ImgSertif={certificate.Img} Title={certificate.Title} />
                   </div>
                 ))}
               </div>
@@ -365,14 +523,14 @@ export default function FullWidthTabs() {
 
           <TabPanel value={value} index={2} dir={theme.direction}>
             <div className="container mx-auto flex justify-center items-center overflow-hidden pb-[5%]">
-              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 lg:gap-8 gap-5">
+              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 lg:gap-6 gap-4">
                 {techStacks.map((stack, index) => (
                   <div
                     key={index}
                     data-aos={index % 3 === 0 ? "fade-up-right" : index % 3 === 1 ? "fade-up" : "fade-up-left"}
                     data-aos-duration={index % 3 === 0 ? "1000" : index % 3 === 1 ? "1200" : "1000"}
                   >
-                    <TechStackIcon TechStackIcon={stack.icon} Language={stack.language} />
+                    <TechStackIcon TechStackIcon={stack.icon} Language={stack.language} Level={stack.level} />
                   </div>
                 ))}
               </div>
