@@ -158,7 +158,7 @@ const ProjectDetails = () => {
     );
   }
 
-  const projectUrl = `https://fikriali.com/project/${toSlug(project.Title)}`;
+  const projectUrl = `https://fikriproject.my.id/project/${toSlug(project.Title)}`;
 
   return (
     <>
