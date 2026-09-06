@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://fikriproject.my.id/sitemap.xml
+Sitemap: https://www.fikriproject.my.id/sitemap.xml
